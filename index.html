@@ -14,7 +14,35 @@
 </head>
 
 <body>
-  <h1>Theme Starter</h1>
+  <div class="navbar-fixed">
+    <nav class="cyan">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="" class="brand-logo">Travel Agency</a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#popular">Popular Places</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- In order to have the side bar -->
+  <ul class="side-nav" id="mobile-nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#search">Search</a></li>
+    <li><a href="#popular">Popular Places</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -23,6 +51,7 @@
     $(document).ready(function () {
       // Custom JS & jQuery here
       
+      $(".button-collapse").sideNav();
     });
   </script>
 </body>
