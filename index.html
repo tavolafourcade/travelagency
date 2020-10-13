@@ -52,7 +52,7 @@
         <div class="caption center-align">
           <h2>Take your Dream Vacation</h2>
           <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa sint similique iusto unde iure.</h5>
-          <a href="#" class="btn btn-large">Learn More</a>
+          <a href="#" class="btn btn-large waves-effect waves-light">Learn More</a>
         </div>
       </li>
 
@@ -60,8 +60,8 @@
         <img src="img/resort2.jpg" alt="">
         <div class="caption left-align">
           <h2>We work with All budgets</h2>
-          <h5 class="light grey-text text-lighten-1 hide-on-small-only">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa sint similique iusto unde iure.</h5>
-          <a href="#" class="btn btn-large">Learn More</a>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa sint similique iusto unde iure.</h5>
+          <a href="#" class="btn btn-large waves-effect waves-light">Learn More</a>
         </div>
       </li>
 
@@ -69,11 +69,56 @@
         <img src="img/resort3.jpg" alt="">
         <div class="caption right-align">
           <h2>Group & Individual Getways</h2>
-          <h5 class="light grey-text text-lighten-4 hide-on-small-only">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa sint similique iusto unde iure.</h5>
-          <a href="#" class="btn btn-large">Learn More</a>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa sint similique iusto unde iure.</h5>
+          <a href="#" class="btn btn-large waves-effect waves-light">Learn More</a>
         </div>
       </li>
     </ul>
+  </section>
+
+  <!-- Section: Search -->
+  <section class="section section-search cyan darken-1 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Search Destinations</h3>
+          <div class="input-field">
+            <input class="white grey-text autocomplete" placeholder='Aruba, Cancun, etc...' type='text' id="autocomplete-input"></input>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Icon Boxes -->
+  <section class="section section-icons grey lighten-4 center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large cyan-text">room</i>
+            <h4>Pick Where</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quo!</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large cyan-text">store</i>
+            <h4>Travel Shop</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quo!</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large cyan-text">airplanemode_active</i>
+            <h4>Fly Cheap</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quo!</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!--Import jQuery before materialize.js-->
@@ -92,6 +137,20 @@
         height: 500,
         transition: 500,
         interval: 6000
+      })
+
+      //Autocomplete
+      $('.autocomplete').autocomplete({
+        data: {
+          "Aruba": null,
+          "Cancun Mexico": null,
+          "Hawaii": null,
+          "Florida": null,
+          "California": null,
+          "Jamaica": null,
+          "Europe": null,
+          "The Bahamas": null        
+          }
       })
 
     });
