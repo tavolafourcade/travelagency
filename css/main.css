@@ -16,7 +16,7 @@
 }
 
 .section-follow .fa-3x {
-  margin: 5px 10px;
+  margin: 5px 10px !important;
 }
 
 .section-contact h5 {
